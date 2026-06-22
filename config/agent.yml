@@ -1,0 +1,5 @@
+external_data_path: data/external/records.csv
+# 请通过环境变量 AMAP_API_KEY 配置，不要提交真实 Key。
+amap_key: ""
+amap_ip_api: "https://restapi.amap.com/v3/ip"
+amap_weather_api: "https://restapi.amap.com/v3/weather/weatherInfo"

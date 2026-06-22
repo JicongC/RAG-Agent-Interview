@@ -1,0 +1,10 @@
+# 建议使用 Python 3.10/3.11。请先按 README 从 PyTorch 官方 CUDA
+# wheel 源安装 GPU 版 torch；直接从普通 PyPI 安装可能得到 CPU 版。
+transformers>=4.45.0
+datasets>=2.20.0
+accelerate>=0.33.0
+peft>=0.12.0
+bitsandbytes>=0.43.1
+PyYAML>=6.0
+sentencepiece>=0.2.0
+nvidia-ml-py>=12.555.43

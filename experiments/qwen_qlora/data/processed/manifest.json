@@ -1,0 +1,20 @@
+{
+  "seed": 42,
+  "target_size": 1200,
+  "unique_seed_questions": 133,
+  "split_strategy": "按原始问题 group_id 分组后划分，防止同题变体跨集合泄漏",
+  "splits": {
+    "train": {
+      "seed_questions": 106,
+      "samples": 957
+    },
+    "validation": {
+      "seed_questions": 13,
+      "samples": 117
+    },
+    "test": {
+      "seed_questions": 14,
+      "samples": 126
+    }
+  }
+}
