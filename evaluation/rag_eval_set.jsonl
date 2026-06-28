@@ -1,0 +1,11 @@
+{"id":"redis_threading","question":"Redis 是单线程的吗？为什么这么快？","expected_keywords":["单线程","内存","数据结构","I/O","多路复用"]}
+{"id":"redis_cache_breakdown","question":"缓存穿透、缓存击穿和缓存雪崩分别怎么解决？","expected_keywords":["布隆过滤器","缓存空值","互斥锁","过期时间","限流"]}
+{"id":"mysql_logs","question":"MySQL 的 binlog、redo log、undo log 分别有什么作用？","expected_keywords":["binlog","主从复制","redo log","持久性","undo log","MVCC"]}
+{"id":"transaction_isolation","question":"什么是事务隔离级别？MySQL 默认是哪一个？","expected_keywords":["读未提交","读已提交","可重复读","串行化","MySQL 默认"]}
+{"id":"sleep_wait","question":"sleep() 和 wait() 有什么区别？","expected_keywords":["Thread","Object","释放锁","notify","synchronized"]}
+{"id":"thread_runnable","question":"Thread 和 Runnable 的区别是什么？","expected_keywords":["Thread","Runnable","类","接口","共享"]}
+{"id":"restful","question":"什么是 RESTful API？设计原则有哪些？","expected_keywords":["HTTP","资源","无状态","方法","统一"]}
+{"id":"unit_test","question":"什么是单元测试？为什么要写单元测试？","expected_keywords":["最小模块","功能正确","重构","定位bug","自信"]}
+{"id":"refactor","question":"什么是重构？为什么要重构？","expected_keywords":["不改变功能","代码结构","可读性","可维护性","扩展"]}
+{"id":"annotation","question":"Java 注解是什么？","expected_keywords":["元数据","类","方法","字段","@Override"]}
+

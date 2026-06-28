@@ -1,2 +1,20 @@
-26d61de8f4000afce2f42ed89662ff6a
-3ebaccff702dd03651dbcf5a4a05586e
+{
+  "version": 2,
+  "files": {
+    "C:\\Users\\26442\\Desktop\\RAG-Agent-InterviewTutor-System-master\\data\\hr_questions.txt": {
+      "md5": "26d61de8f4000afce2f42ed89662ff6a",
+      "chunk_count": 19,
+      "source_name": "hr_questions.txt"
+    },
+    "C:\\Users\\26442\\Desktop\\RAG-Agent-InterviewTutor-System-master\\data\\tech_knowledge.txt": {
+      "md5": "3ebaccff702dd03651dbcf5a4a05586e",
+      "chunk_count": 80,
+      "source_name": "tech_knowledge.txt"
+    },
+    "C:\\Users\\26442\\Desktop\\RAG-Agent-InterviewTutor-System-master\\data\\uploads\\面试.txt": {
+      "md5": "bb678b379622cca307442e7171645bfe",
+      "chunk_count": 87,
+      "source_name": "面试.txt"
+    }
+  }
+}

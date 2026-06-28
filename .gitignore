@@ -41,6 +41,7 @@ htmlcov/
 # 按需保留，如果你希望将部分样例数据上传到 GitHub，可以手动取消注释
 data/user_histories/
 data/external/
+data/uploads/
 data/vectorstore/
 chroma_db/
 chroma/
@@ -54,3 +55,4 @@ Thumbs.db
 # QLoRA checkpoints and local evaluation outputs
 experiments/qwen_qlora/outputs/
 experiments/qwen_qlora/results/
+evaluation/reports/

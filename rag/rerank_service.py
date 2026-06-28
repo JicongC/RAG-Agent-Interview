@@ -14,8 +14,12 @@ class RerankService:
         self.top_k = int(chroma_conf.get("k", 3))
 
     def rerank(self, query: str, docs: List[Document]) -> List[Document]:
+        result_docs, _ = self.rerank_with_status(query, docs)
+        return result_docs
+
+    def rerank_with_status(self, query: str, docs: List[Document]) -> tuple[List[Document], str]:
         if not docs:
-            return []
+            return [], "skipped_no_docs"
 
         try:
             doc_texts = [doc.page_content for doc in docs]
@@ -30,7 +34,7 @@ class RerankService:
                 logger.warning(
                     f"[Rerank]调用失败，status_code={response.status_code}, code={response.code}, message={response.message}"
                 )
-                return docs[: self.top_k]
+                return docs[: self.top_k], "api_failed_degraded"
 
             result_docs: List[Document] = []
             for item in response.output.results or []:
@@ -38,7 +42,9 @@ class RerankService:
                 if 0 <= idx < len(docs):
                     result_docs.append(docs[idx])
 
-            return result_docs if result_docs else docs[: self.top_k]
+            if result_docs:
+                return result_docs, "success"
+            return docs[: self.top_k], "empty_result_degraded"
         except Exception as e:
             logger.warning(f"[Rerank]重排序异常，降级为向量检索结果: {str(e)}")
-            return docs[: self.top_k]
+            return docs[: self.top_k], "exception_degraded"
